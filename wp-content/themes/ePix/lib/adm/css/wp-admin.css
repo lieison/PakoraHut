@@ -1,0 +1,29 @@
+div.updated.get_started {padding:10px;font-size:14px;margin:15px 0 5px 0;}
+div.updated.get_started a {color:#fff;}
+
+.highlight-admin-text {color:#EA4B24;}
+.mce-i-themeva_shortcodes {background:url(../js/tinymce/themeva.png) no-repeat center center !important;}
+
+select.wpb_vc_param_value.arrow,
+.wpb_vc_param_value .arrow,
+.wpb_vc_param_value .arrow::after {position:relative !important;bottom:auto !important;left:auto !important;}
+#poststuff h2.nav-tab-wrapper {padding:0;}
+h5.cmb_metabox_title {font-size:16px;}
+
+
+#visual_composer_content .wpb_socialicon {display:inline-block;width:80px;height:80px;}
+#visual_composer_content .wpb_plan {float:left;}
+#visual_composer_content .wpb_pricing_table .vc_controls-cc {top:5px;}
+#visual_composer_content .wpb_plan .vc_element-move {display:none;}
+#visual_composer_content .wpb_socialicon,
+#visual_composer_content .wpb_plan .wpb_element_wrapper {
+ border:1px solid #ccc;
+ margin:5px;
+}
+
+#visual_composer_content .tab_controls {clear:both;}
+
+.wpb_pricing_table > .wpb_element_wrapper h4,
+.add_plan {cursor:pointer}
+
+textarea.bg_slider {height: 3em;}
