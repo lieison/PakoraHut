@@ -19,10 +19,10 @@
 define('DB_NAME', 'wp_pakora_hut');
 
 /** MySQL database username */
-define('DB_USER', 'phsupport');
+define('DB_USER', 'root');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'phsupport');
+define('DB_PASSWORD', '');
 
 /** MySQL hostname */
 define('DB_HOST', 'localhost');
