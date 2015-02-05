@@ -14,7 +14,7 @@
 	
 	?>
 
-
+<?php if($post->ID != 2575): ?>
 	<header id="header-wrap" class="<?php echo $NV_frame_header .' '. $NV_autohide_menu . ' '. $collapse_menu .' ' . $fixed_header; ?> clearfix" <?php echo $auto_hide_menu_timeout; ?>>
 		<div id="header-bg" class="skinset-header nv-skin"></div>    
         
@@ -297,3 +297,4 @@
                 
 		</div><!-- /header -->
 	</header><!-- /header-wrap -->
+ <?php endif;?>

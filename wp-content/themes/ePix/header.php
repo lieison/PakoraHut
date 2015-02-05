@@ -128,9 +128,11 @@
 	// Background Sliders
 	$auto_hide_menu_timeout = $fullscreen_slider = '';
 
-	// Auto hide menu	
-	$collapse_menu = ( get_post_meta( $post->ID, '_cmb_collapse_menu', true ) != 'disable-callapse-menu' && ( of_get_option('collapse_menu') == 'collapse-menu' || get_post_meta( $post->ID, '_cmb_collapse_menu', true ) == 'collapse-menu' ) ? 'collapse-menu' : '' );
-	
+	// Auto hide menu
+        //echo "<script>alert(" . $post->ID .");</script>";
+        //if($post->ID != 2575):
+            $collapse_menu = ( get_post_meta( $post->ID, '_cmb_collapse_menu', true ) != 'disable-callapse-menu' && ( of_get_option('collapse_menu') == 'collapse-menu' || get_post_meta( $post->ID, '_cmb_collapse_menu', true ) == 'collapse-menu' ) ? 'collapse-menu' : '' );
+        //endif;
 			
 	// Auto hide menu attribute
 	$auto_hide_menu_timeout = ( !empty( $timeout ) ? 'data-menutimeout="'. $timeout . '"' : '' );
@@ -264,7 +266,7 @@
 	:: TWITTER
 	------------------------------------ */
 
-		if( $NV_twitter == 'pagetop' && get_post_meta( $post->ID, '_cmb_twitter', true ) != 'disable' )
+		if( $NV_twitter == 'pagetop' && get_post_meta( $post->ID, '_cmb_twitter', true ) != 'disable'  )
 		{
 			echo "\n" . '<div class="row">';
 			echo "\n\t" . '<div class="twitter-wrap skinset-main nv-skin '. $NV_frame_header .'">';
@@ -279,7 +281,7 @@
 	:: INTRO TEXT
 	------------------------------------ */
 
-		if( !empty($introtext) || $NV_pagetitle != "BLANK" && is_page() )
+		if( !empty($introtext) || $NV_pagetitle != "BLANK" && is_page() && $post->ID !=2575)
 		{
 			
 			echo "\n" . '<div class="row intro-wrap">';
@@ -323,7 +325,7 @@
 					{
 						echo "\n\t\t\t\t\t" . '<small>'. __('By', 'NorthVantage') .' <span class="author">'. get_the_author_meta( 'display_name' , $wp_query->post->post_author ) .'</span></small>';
 					}
-					
+				
 					echo "\n\t\t\t\t" . '</div>';
 				}           
 				
